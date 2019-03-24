@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,46 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./public/css/normalize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./public/css/skeleton.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./public/css/style.css">
-    
+    <script src="./public/js/calculator.js"></script>
 </head>
+
 <body>
- 
-   <div class="container">
-        <header><h1>Calculator App</h1></header>
-       <div class="adder">
-<input type="number" id="val1">
-<input type="number" id="val2">
-<button>Submit</button>
-       </div>
-   </div>
+
+    <div class="container">
+        <header>
+            <h1>Calculator App</h1>
+        </header>
+        <div class="adder">
+            <h1>Add</h1>
+            <input type="number" id="add1">
+            <input type="number" id="add2">
+            <button id="addsubmit">Submit</button>
+            <h2 class="addresult">0</h2>
+        </div>
+        <div class="subtractor">
+        <h1>subtract</h1>
+        <input type="number" id="subtract1">
+        <input type="number" id="subtract2">
+        <button id="subtractsubmit">Submit</button>
+        <div class="subtractresult"></div>
+    </div>
+    <div class="multiplier">
+    <h1>multiply</h1>
+    <input type="number" id="multiply1">
+    <input type="number" id="multiply2">
+    <button id="multiplysubmit">Submit</button>
+    <div class="multiplyresult"></div>
+    </div>
+    <div class="divider">
+    <h1>divide</h1>
+    <input type="number" id="divide1">
+    <input type="number" id="divide2">
+    <button id="dividesubmit">Submit</button>
+    <div class="divideresult"></div>
+    </div>
+
+    </div>
+    <script src="./public/js/calculatorDom.js"></script>
 </body>
+
 </html>
